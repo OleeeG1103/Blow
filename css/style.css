@@ -1,0 +1,318 @@
+@charset "UTF-8";
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(../img/bg1.jpg);
+  background-position: center, center;
+  background-size: cover;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 90vw;
+  height: 90vh;
+}
+
+/*--------------------- Левый блок ----------------------*/
+.block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  width: 120px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.block1-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.block1-content__text {
+  font-size: 18px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-writing-mode: tb-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: tb-rl;
+  font-weight: 600;
+  text-shadow: 0px 0px 2px #b3b3b3;
+}
+
+.block1-content__text--gray {
+  color: #d1d1d1;
+  font-weight: 500;
+}
+
+.block1-footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-bottom: 3vh;
+}
+
+.block1-footer__icon {
+  width: 38px;
+  height: 36px;
+}
+
+/*---------------------- Основной блок -----------------------*/
+.block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-image: url(../img/bg.jpg);
+  background-position: center, center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.header-logo, .header-menu {
+  display: inline-block;
+}
+
+.header-logo {
+  margin-top: 8vh;
+  margin-left: 5vw;
+}
+
+.header-logo__link {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.header-menu {
+  margin-top: 8vh;
+  margin-right: 2vw;
+}
+
+.header-menu__link {
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  margin-left: 40px;
+}
+
+.header-menu__link:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.header-menu__link_active {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.home-content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home-btn {
+  width: 300px;
+  height: 60px;
+  font-size: 14px;
+  border: none;
+  border-radius: 50px;
+  background-color: #000;
+  color: #f0cdab;
+  outline: none;
+}
+
+.home-btn:hover {
+  background-color: #000;
+  -webkit-box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/*--------------------- about --------------------*/
+.about-content {
+  width: 85%;
+  height: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/*-------------------- work --------------------*/
+.work-content {
+  width: 85%;
+  height: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/*-------------------- contact --------------------*/
+.contact-content {
+  width: 85%;
+  height: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/*-------------------- media --------------------*/
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 95vw;
+    height: 95vh;
+  }
+  .block1 {
+    width: 80px;
+  }
+  .block1-content__text {
+    font-size: 12px;
+  }
+  .header-logo__link {
+    font-size: 25px;
+  }
+  .header-menu__link {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 0px;
+  }
+  .home-content {
+    margin-top: 20vh;
+  }
+  .home-btn {
+    width: 190px;
+    height: 50px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .block1 {
+    width: 60px;
+  }
+  .block2 {
+    background-image: url(../img/bg_iPhone.jpg);
+    background-position: center, center;
+    background-size: cover;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header-logo__link {
+    font-size: 60px;
+  }
+  .header-menu {
+    margin-right: 0px;
+  }
+  .header-menu__link {
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+  }
+  .home-content {
+    margin-top: 20vh;
+  }
+  .about-content, .work-content, .contact-content {
+    height: 50%;
+  }
+}
